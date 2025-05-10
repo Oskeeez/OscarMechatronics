@@ -73,9 +73,9 @@ const ExperienceCard = ({
         x: isRight ? 50 : -50,
       }}
       animate={{ 
-        opacity: active ? 1 : 0.7,
+        opacity: 1,
         x: 0,
-        boxShadow: active ? "0 10px 25px rgba(0,0,0,0.1)" : "0 4px 6px rgba(0,0,0,0.1)" 
+        boxShadow: "0 8px 20px rgba(0,0,0,0.08)"
       }}
       transition={{ 
         duration: 0.5,
@@ -103,8 +103,8 @@ const ExperienceCard = ({
             key={i}
             className="flex items-start"
             initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: active ? 1 : 0.7, x: 0 }}
-            transition={{ duration: 0.3, delay: active ? 0.1 + (i * 0.1) : 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, delay: 0.1 + (i * 0.1) }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-teal-400 mt-2 mr-2 flex-shrink-0" />
             <p className="font-poppins text-gray-800 text-left text-sm md:text-base">{bullet}</p>
@@ -123,7 +123,8 @@ const ExperienceCard = ({
 };
 
 export default function ExperienceSection() {
-  const [activeExperience, setActiveExperience] = useState(0);
+  // Removed active experience state since we're no longer using selection
+  const [activeExperience] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -268,7 +269,7 @@ export default function ExperienceSection() {
             >
               {/* Timeline connector */}
               {index < experiences.length - 1 && (
-                <TimelineConnector isActive={index < activeExperience} />
+                <div className="absolute w-0.5 bg-teal-200 h-full left-4 md:left-1/2 top-0 -translate-x-1/2 z-0" />
               )}
               
               {/* Timeline date marker */}
@@ -280,9 +281,8 @@ export default function ExperienceSection() {
                 transition={{ duration: 0.6 }}
               >
                 <motion.div 
-                  className="inline-block bg-secondary text-white px-4 py-1 rounded-full text-sm font-medium shadow-md"
+                  className="inline-block bg-teal-500 text-white px-4 py-1 rounded-full text-sm font-medium shadow-md"
                   whileHover={{ y: -2 }}
-                  animate={{ backgroundColor: activeExperience === index ? "#ff6b6b" : "#57c5b6" }}
                 >
                   {exp.period.split(' - ')[0]}
                 </motion.div>
@@ -303,20 +303,16 @@ export default function ExperienceSection() {
                     
                     {/* Timeline dot - mobile only */}
                     <div className="md:hidden absolute left-0 top-0 mt-1">
-                      <TimelineDot 
-                        active={activeExperience === index}
-                        onClick={() => setActiveExperience(index)}
-                        isRight={false}
-                      />
+                      <div className="w-7 h-7 rounded-full bg-white border-2 border-teal-500 flex items-center justify-center absolute z-10 left-1/2 -translate-x-1/2">
+                        <FaBriefcase className="text-xs text-teal-500" />
+                      </div>
                     </div>
                     
                     {/* Timeline dot - desktop */}
                     <div className="hidden md:block">
-                      <TimelineDot 
-                        active={activeExperience === index}
-                        onClick={() => setActiveExperience(index)}
-                        isRight={exp.isRightAligned}
-                      />
+                      <div className={`w-7 h-7 rounded-full bg-white border-2 border-teal-500 flex items-center justify-center absolute z-10 ${exp.isRightAligned ? 'right-0 translate-x-1/2' : 'left-1/2 -translate-x-1/2'}`}>
+                        <FaBriefcase className="text-xs text-teal-500" />
+                      </div>
                     </div>
                   </div>
                 </div>

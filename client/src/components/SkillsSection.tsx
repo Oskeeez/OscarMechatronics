@@ -330,10 +330,9 @@ export default function SkillsSection() {
                 transition={{ duration: 0.6, delay: categoryIndex * 0.1 + 0.2 }}
               >
                 <motion.div 
-                  className="flex items-center justify-center w-12 h-12 rounded-full mr-4"
+                  className="mr-4"
                   style={{ 
-                    color: hoveredCategory === categoryIndex ? "#fff" : category.color,
-                    backgroundColor: hoveredCategory === categoryIndex ? category.color : "transparent"
+                    color: category.color
                   }}
                   animate={{ 
                     rotate: hoveredCategory === categoryIndex ? 360 : 0,

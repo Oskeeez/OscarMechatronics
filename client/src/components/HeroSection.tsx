@@ -137,6 +137,25 @@ export default function HeroSection() {
             <TypedText text="Oscar Jones" speed={100} />
           </h2>
           
+          <p className="text-xl font-medium text-primary mt-2">
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.8, duration: 0.8 }}
+            >
+              Undergraduate Engineer (Mechatronics & Medical Engineering)
+            </motion.span>
+          </p>
+          <p className="text-lg text-gray-700">
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2.0, duration: 0.8 }}
+            >
+              Industry Lead @ QUT Robotics Club | Undergraduate Engineer @ Multicom Resources
+            </motion.span>
+          </p>
+          
           <motion.p 
             className="mt-6 text-lg md:text-xl leading-relaxed"
             initial={{ opacity: 0 }}

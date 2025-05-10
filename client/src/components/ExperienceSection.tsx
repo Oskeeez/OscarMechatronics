@@ -209,7 +209,7 @@ export default function ExperienceSection() {
       
       <div className="container mx-auto relative z-10">
         <motion.h2 
-          className="font-poppins font-bold text-3xl md:text-4xl text-center mb-16 relative"
+          className="font-poppins font-bold text-3xl md:text-4xl text-center mb-6 relative"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -240,6 +240,21 @@ export default function ExperienceSection() {
             />
           </motion.span>
         </motion.h2>
+        
+        <motion.div
+          className="text-center mb-16 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <h3 className="text-xl font-medium text-primary mb-2">
+            Undergraduate Engineer (Mechatronics & Medical Engineering)
+          </h3>
+          <p className="text-gray-700">
+            Industry Lead @ QUT Robotics Club | Undergraduate Engineer @ Multicom Resources
+          </p>
+        </motion.div>
         
         <div className="timeline-container relative pb-10">
           {/* Main timeline line */}

@@ -66,7 +66,7 @@ const ExperienceCard = ({
   
   return (
     <motion.div 
-      className={`bg-light p-6 rounded-lg shadow-md relative
+      className={`bg-light p-4 md:p-6 rounded-lg shadow-md relative
                   ${isRight ? 'ml-6 md:ml-0' : 'ml-6 md:mr-0'} w-full`}
       initial={{ 
         opacity: 0,
@@ -90,10 +90,10 @@ const ExperienceCard = ({
       
       <div className="flex items-center mb-4">
         <FaCalendarAlt className="text-secondary mr-2 text-sm" />
-        <p className="font-poppins text-gray-600 text-sm text-left">{experience.period}</p>
+        <p className="font-poppins text-gray-600 text-xs md:text-sm text-left">{experience.period}</p>
       </div>
       
-      <p className="text-gray-700 mb-4 text-left">
+      <p className="font-poppins text-gray-700 mb-4 text-left text-sm md:text-base">
         {experience.description}
       </p>
       
@@ -107,7 +107,7 @@ const ExperienceCard = ({
             transition={{ duration: 0.3, delay: active ? 0.1 + (i * 0.1) : 0 }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary mt-2 mr-2 flex-shrink-0" />
-            <p className="text-gray-700 text-left">{bullet}</p>
+            <p className="font-poppins text-gray-700 text-left text-sm md:text-base">{bullet}</p>
           </motion.div>
         ))}
       </div>
@@ -115,7 +115,7 @@ const ExperienceCard = ({
       {experience.achievement && (
         <div className="mt-4 p-3 bg-primary bg-opacity-10 rounded-md flex items-start">
           <FaAward className="text-secondary mt-1 mr-2 flex-shrink-0" />
-          <p className="text-primary font-medium text-left">{experience.achievement}</p>
+          <p className="font-poppins text-primary font-medium text-left text-sm md:text-base">{experience.achievement}</p>
         </div>
       )}
     </motion.div>
@@ -289,7 +289,7 @@ export default function ExperienceSection() {
               </motion.div>
               
               <div className="flex flex-col md:flex-row mt-8">
-                <div className={`relative md:w-1/2 ${exp.isRightAligned ? 'md:pr-12 md:text-right' : 'md:pl-12 md:order-1'} mb-8 md:mb-0 pl-10 md:pl-0 md:text-left ${!exp.isRightAligned && 'md:order-0'}`}>
+                <div className={`relative md:w-1/2 ${exp.isRightAligned ? 'md:pr-12 md:text-right' : 'md:pl-12 md:order-1'} mb-8 md:mb-0 pl-10 md:pl-0 ${exp.isRightAligned ? 'md:text-right' : 'md:text-left'} ${!exp.isRightAligned && 'md:order-0'}`}>
                   <div className={exp.isRightAligned ? 'md:ml-auto' : ''}>
                     <motion.h3 
                       className="font-poppins font-semibold text-xl text-primary mb-1"

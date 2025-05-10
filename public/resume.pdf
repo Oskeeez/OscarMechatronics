@@ -1,0 +1,219 @@
+%PDF-1.4
+1 0 obj
+<< /Title (Oscar Jones - Resume)
+/Creator (CV Builder)
+/Producer (CV Builder)
+/Author (Oscar Jones)
+>>
+endobj
+2 0 obj
+<< /Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+3 0 obj
+<< /Type /Pages
+/Count 1
+/Kids [4 0 R]
+>>
+endobj
+4 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 612 792]
+/Contents 5 0 R
+/Resources << /ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font << /F1 6 0 R /F2 7 0 R /F3 8 0 R >>
+>>
+>>
+endobj
+5 0 obj
+<< /Length 2166 >>
+stream
+BT
+/F1 28 Tf
+50 710 Td
+(Oscar Jones) Tj
+ET
+
+BT
+/F2 12 Tf
+50 690 Td
+(Mechatronics & Medical Engineering | oscar.jones@example.com | Brisbane, QLD) Tj
+ET
+
+BT
+/F3 18 Tf
+50 650 Td
+(Professional Experience) Tj
+ET
+
+BT
+/F1 14 Tf
+50 625 Td
+(Electrical & Control System Design) Tj
+ET
+
+BT
+/F2 12 Tf
+50 610 Td
+(QUT HeartBeats | Nov 2023 - Current) Tj
+ET
+
+BT
+/F2 11 Tf
+60 595 Td
+(- Working within the electrical sub-team, focusing on the early development of the control system) Tj
+60 580 Td
+(- Designing control algorithms and hardware systems for a totally artificial heart) Tj
+60 565 Td
+(- Exploring integration of sensors and actuators to build a responsive and adaptive system) Tj
+60 550 Td
+(- Collaborating closely with the mechanical and biomedical teams) Tj
+ET
+
+BT
+/F1 14 Tf
+50 525 Td
+(Industry Lead) Tj
+ET
+
+BT
+/F2 12 Tf
+50 510 Td
+(QUT Robotics Club | Feb 2024 - Current) Tj
+ET
+
+BT
+/F2 11 Tf
+60 495 Td
+(- Coordinating project schedules and resource allocation) Tj
+60 480 Td
+(- Mentoring junior members in robotics fundamentals) Tj
+60 465 Td
+(- Developing competition strategies and technical solutions) Tj
+60 450 Td
+(- Securing sponsorship and equipment donations) Tj
+ET
+
+BT
+/F1 14 Tf
+50 425 Td
+(Undergraduate Engineer) Tj
+ET
+
+BT
+/F2 12 Tf
+50 410 Td
+(Multicom Resources | Jan 2021 - Dec 2022) Tj
+ET
+
+BT
+/F2 11 Tf
+60 395 Td
+(- Developed CAD models for custom equipment components) Tj
+60 380 Td
+(- Programmed PLC systems for process automation) Tj
+60 365 Td
+(- Implemented sensor arrays for real-time data collection) Tj
+60 350 Td
+(- Created technical documentation and user manuals) Tj
+ET
+
+BT
+/F3 18 Tf
+50 310 Td
+(Education) Tj
+ET
+
+BT
+/F1 14 Tf
+50 285 Td
+(Bachelor of Engineering) Tj
+ET
+
+BT
+/F2 12 Tf
+50 270 Td
+(Mechatronics & Medical Engineering | Queensland University of Technology | 2018 - 2022) Tj
+ET
+
+BT
+/F3 18 Tf
+50 230 Td
+(Skills) Tj
+ET
+
+BT
+/F2 11 Tf
+60 215 Td
+(- CAD/CAM Software \(SolidWorks, Fusion 360\)) Tj
+60 200 Td
+(- Programming \(C++, Python, MATLAB\)) Tj
+60 185 Td
+(- Microcontroller Programming \(Arduino, Raspberry Pi\)) Tj
+60 170 Td
+(- PLC Programming and Industrial Automation) Tj
+60 155 Td
+(- Sensor Integration and Data Acquisition) Tj
+60 140 Td
+(- Control Systems Design) Tj
+60 125 Td
+(- Mechanical Design and Prototyping) Tj
+ET
+
+BT
+/F3 18 Tf
+50 85 Td
+(Achievements) Tj
+ET
+
+BT
+/F2 11 Tf
+60 70 Td
+(- Innovation Award for developing an automated quality control system at Multicom Resources) Tj
+60 55 Td
+(- First place in the 2020 University Robotics Challenge with QUT Robotics Club) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+7 0 obj
+<< /Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+xref
+0 9
+0000000000 65535 f
+0000000009 00000 n
+0000000116 00000 n
+0000000165 00000 n
+0000000224 00000 n
+0000000410 00000 n
+0000002628 00000 n
+0000002730 00000 n
+0000002827 00000 n
+trailer
+<< /Size 9
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+2929
+%%EOF

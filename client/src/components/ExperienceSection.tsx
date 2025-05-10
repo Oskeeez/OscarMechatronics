@@ -67,7 +67,7 @@ const ExperienceCard = ({
   return (
     <motion.div 
       className={`bg-light p-6 rounded-lg shadow-md relative
-                  ${isRight ? 'ml-6 md:ml-0' : 'ml-6 md:mr-0'}`}
+                  ${isRight ? 'ml-6 md:ml-0' : 'ml-6 md:mr-0'} w-full`}
       initial={{ 
         opacity: 0,
         x: isRight ? 50 : -50,
@@ -321,7 +321,7 @@ export default function ExperienceSection() {
                   </div>
                 </div>
                 
-                <div className={`md:w-1/2 ${exp.isRightAligned ? 'md:pl-12' : 'md:pr-12 md:text-right md:order-0'}`}>
+                <div className={`md:w-1/2 ${exp.isRightAligned ? 'md:pl-12' : 'md:pr-12 md:order-0'} w-full`}>
                   <ExperienceCard 
                     experience={exp} 
                     active={activeExperience === index}

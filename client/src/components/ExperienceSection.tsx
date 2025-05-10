@@ -52,7 +52,7 @@ const TimelineDot = ({ active, onClick, isRight }: { active: boolean, onClick: (
   );
 };
 
-// Animated content card
+// Animated content card for experience details
 const ExperienceCard = ({ 
   experience, 
   active, 
@@ -84,16 +84,16 @@ const ExperienceCard = ({
       whileHover={{ y: -5 }}
     >
       <div className="flex items-center mb-3">
-        <FaBuilding className="text-primary mr-2" />
-        <h4 className="font-poppins font-semibold text-lg text-left">{experience.company}</h4>
+        <FaBuilding className="text-teal-500 mr-2" />
+        <h4 className="font-poppins font-semibold text-lg text-left text-teal-700">{experience.company}</h4>
       </div>
       
       <div className="flex items-center mb-4">
-        <FaCalendarAlt className="text-secondary mr-2 text-sm" />
-        <p className="font-poppins text-gray-600 text-xs md:text-sm text-left">{experience.period}</p>
+        <FaCalendarAlt className="text-teal-400 mr-2 text-sm" />
+        <p className="font-poppins text-teal-600 text-xs md:text-sm text-left">{experience.period}</p>
       </div>
       
-      <p className="font-poppins text-gray-700 mb-4 text-left text-sm md:text-base">
+      <p className="font-poppins text-gray-800 mb-4 text-left text-sm md:text-base">
         {experience.description}
       </p>
       
@@ -106,16 +106,16 @@ const ExperienceCard = ({
             animate={{ opacity: active ? 1 : 0.7, x: 0 }}
             transition={{ duration: 0.3, delay: active ? 0.1 + (i * 0.1) : 0 }}
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-secondary mt-2 mr-2 flex-shrink-0" />
-            <p className="font-poppins text-gray-700 text-left text-sm md:text-base">{bullet}</p>
+            <span className="h-1.5 w-1.5 rounded-full bg-teal-400 mt-2 mr-2 flex-shrink-0" />
+            <p className="font-poppins text-gray-800 text-left text-sm md:text-base">{bullet}</p>
           </motion.div>
         ))}
       </div>
       
       {experience.achievement && (
-        <div className="mt-4 p-3 bg-primary bg-opacity-10 rounded-md flex items-start">
-          <FaAward className="text-secondary mt-1 mr-2 flex-shrink-0" />
-          <p className="font-poppins text-primary font-medium text-left text-sm md:text-base">{experience.achievement}</p>
+        <div className="mt-4 p-3 bg-teal-50 rounded-md flex items-start border border-teal-200">
+          <FaAward className="text-teal-500 mt-1 mr-2 flex-shrink-0" />
+          <p className="font-poppins text-teal-700 font-medium text-left text-sm md:text-base">{experience.achievement}</p>
         </div>
       )}
     </motion.div>
@@ -289,10 +289,10 @@ export default function ExperienceSection() {
               </motion.div>
               
               <div className="flex flex-col md:flex-row mt-8">
-                <div className={`relative md:w-1/2 ${exp.isRightAligned ? 'md:pr-12 md:text-right' : 'md:pl-12 md:order-1'} mb-8 md:mb-0 pl-10 md:pl-0 ${exp.isRightAligned ? 'md:text-right' : 'md:text-left'} ${!exp.isRightAligned && 'md:order-0'}`}>
+                <div className={`relative md:w-1/2 ${exp.isRightAligned ? 'md:pr-20 md:text-right' : 'md:pl-20 md:order-1'} mb-8 md:mb-0 pl-10 md:pl-0 ${exp.isRightAligned ? 'md:text-right' : 'md:text-left'} ${!exp.isRightAligned && 'md:order-0'}`}>
                   <div className={exp.isRightAligned ? 'md:ml-auto' : ''}>
                     <motion.h3 
-                      className="font-poppins font-semibold text-xl text-primary mb-1"
+                      className="font-poppins font-semibold text-xl text-teal-600 mb-1"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}

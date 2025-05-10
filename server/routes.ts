@@ -1,10 +1,15 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import express from "express";
+import path from "path";
 import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
 import { ZodError } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve files from the public folder
+  app.use('/public', express.static(path.join(process.cwd(), 'public')));
+  
   // Contact form submission route
   app.post("/api/contact", async (req, res) => {
     try {

@@ -85,12 +85,12 @@ const ExperienceCard = ({
     >
       <div className="flex items-center mb-3">
         <FaBuilding className="text-primary mr-2" />
-        <h4 className="font-semibold text-lg text-left">{experience.company}</h4>
+        <h4 className="font-poppins font-semibold text-lg text-left">{experience.company}</h4>
       </div>
       
       <div className="flex items-center mb-4">
         <FaCalendarAlt className="text-secondary mr-2 text-sm" />
-        <p className="text-gray-600 text-sm text-left">{experience.period}</p>
+        <p className="font-poppins text-gray-600 text-sm text-left">{experience.period}</p>
       </div>
       
       <p className="text-gray-700 mb-4 text-left">
@@ -289,10 +289,10 @@ export default function ExperienceSection() {
               </motion.div>
               
               <div className="flex flex-col md:flex-row mt-8">
-                <div className={`relative md:w-1/2 ${exp.isRightAligned ? 'md:pr-12 md:text-right' : 'md:pl-12 md:order-1'} mb-8 md:mb-0 pl-10 md:pl-0 ${!exp.isRightAligned && 'md:order-0'}`}>
+                <div className={`relative md:w-1/2 ${exp.isRightAligned ? 'md:pr-12 md:text-right' : 'md:pl-12 md:order-1'} mb-8 md:mb-0 pl-10 md:pl-0 md:text-left ${!exp.isRightAligned && 'md:order-0'}`}>
                   <div className={exp.isRightAligned ? 'md:ml-auto' : ''}>
                     <motion.h3 
-                      className="font-poppins font-semibold text-xl text-primary"
+                      className="font-poppins font-semibold text-xl text-primary mb-1"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}

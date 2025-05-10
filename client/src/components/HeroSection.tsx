@@ -198,7 +198,7 @@ export default function HeroSection() {
               variant="outline"
               className="relative overflow-hidden group border-2 border-secondary text-secondary hover:text-white py-3 px-6"
             >
-              <a href="/resume.pdf" download>
+              <a href="/public/resume.pdf" download>
                 <FaFileDownload className="mr-2" />
                 <span className="relative z-10">Download CV</span>
                 <span className="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>

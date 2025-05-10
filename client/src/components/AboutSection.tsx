@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaCertificate, FaCode, FaBriefcase, FaUsers } from "react-icons/fa";
+import { FaGraduationCap, FaBriefcase, FaUsers, FaHeartbeat } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutSection() {
@@ -21,6 +21,12 @@ export default function AboutSection() {
       title: "Industry Lead",
       institution: "QUT Robotics Club",
       period: "Current Position"
+    },
+    {
+      icon: <FaHeartbeat className="text-secondary mr-3 text-xl" />,
+      title: "Electrical & Control System Design",
+      institution: "QUT HeartBeats",
+      period: "Nov 2023 - Current"
     }
   ];
 

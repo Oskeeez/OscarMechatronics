@@ -85,15 +85,15 @@ const ExperienceCard = ({
     >
       <div className="flex items-center mb-3">
         <FaBuilding className="text-primary mr-2" />
-        <h4 className="font-semibold text-lg">{experience.company}</h4>
+        <h4 className="font-semibold text-lg text-left">{experience.company}</h4>
       </div>
       
       <div className="flex items-center mb-4">
         <FaCalendarAlt className="text-secondary mr-2 text-sm" />
-        <p className="text-gray-600 text-sm">{experience.period}</p>
+        <p className="text-gray-600 text-sm text-left">{experience.period}</p>
       </div>
       
-      <p className="text-gray-700 mb-4">
+      <p className="text-gray-700 mb-4 text-left">
         {experience.description}
       </p>
       
@@ -107,7 +107,7 @@ const ExperienceCard = ({
             transition={{ duration: 0.3, delay: active ? 0.1 + (i * 0.1) : 0 }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary mt-2 mr-2 flex-shrink-0" />
-            <p className="text-gray-700">{bullet}</p>
+            <p className="text-gray-700 text-left">{bullet}</p>
           </motion.div>
         ))}
       </div>
@@ -115,7 +115,7 @@ const ExperienceCard = ({
       {experience.achievement && (
         <div className="mt-4 p-3 bg-primary bg-opacity-10 rounded-md flex items-start">
           <FaAward className="text-secondary mt-1 mr-2 flex-shrink-0" />
-          <p className="text-primary font-medium">{experience.achievement}</p>
+          <p className="text-primary font-medium text-left">{experience.achievement}</p>
         </div>
       )}
     </motion.div>
@@ -135,23 +135,23 @@ export default function ExperienceSection() {
   
   const experiences: ExperienceItem[] = [
     {
-      title: "Undergraduate Engineer",
-      company: "Multicom Resources",
-      period: "Jan 2021 - Dec 2022",
-      description: "Led the design and implementation of automated testing equipment for quality control processes, resulting in a 40% reduction in testing time and improved accuracy.",
+      title: "Electrical & Control System Design",
+      company: "QUT HeartBeats",
+      period: "Nov 2023 - Current",
+      description: "I'm part of the QUT HeartBeats team competing in the Heart Hackathon, where we're in the early stages of developing a concept for a totally artificial heart (TAH). Our goal is to design a mechanical replacement for the human heart that can support patients with end-stage heart failure.",
       bullets: [
-        "Developed CAD models for custom equipment components",
-        "Programmed PLC systems for process automation",
-        "Implemented sensor arrays for real-time data collection",
-        "Created technical documentation and user manuals"
+        "Working within the electrical sub-team, focusing on the early development of the control system",
+        "Designing control algorithms and hardware systems that will regulate pressure, flow, and timing to mimic the natural heart",
+        "Exploring integration of sensors and actuators to build a responsive and adaptive system",
+        "Collaborating closely with the mechanical and biomedical teams to ensure a cohesive and clinically relevant design"
       ],
-      achievement: "Received Innovation Award for developing an automated quality control system",
+      achievement: "Early-stage development of control systems for a medical-grade artificial heart project",
       isRightAligned: true
     },
     {
-      title: "Technical Lead",
+      title: "Industry Lead",
       company: "QUT Robotics Club",
-      period: "Feb 2019 - Nov 2021",
+      period: "Feb 2024 - Current",
       description: "Managed a team of 15 student engineers in designing and building competitive robots for national competitions. Led the team to first place in the 2020 University Robotics Challenge.",
       bullets: [
         "Coordinated project schedules and resource allocation",
@@ -163,17 +163,18 @@ export default function ExperienceSection() {
       isRightAligned: false
     },
     {
-      title: "Mechatronics Intern",
-      company: "TechServe Systems",
-      period: "Jun 2020 - Sep 2020",
-      description: "Assisted in the development of custom automation solutions for industrial clients, focusing on integration of mechanical systems with electronic controls and software.",
+      title: "Undergraduate Engineer",
+      company: "Multicom Resources",
+      period: "Jan 2021 - Dec 2022",
+      description: "Led the design and implementation of automated testing equipment for quality control processes, resulting in a 40% reduction in testing time and improved accuracy.",
       bullets: [
-        "Designed mechanical components in SolidWorks",
-        "Supported electrical wiring and component integration",
-        "Wrote Arduino and Python code for control systems",
-        "Participated in client meetings and requirement gathering"
+        "Developed CAD models for custom equipment components",
+        "Programmed PLC systems for process automation",
+        "Implemented sensor arrays for real-time data collection",
+        "Created technical documentation and user manuals"
       ],
-      isRightAligned: true
+      achievement: "Received Innovation Award for developing an automated quality control system",
+      isRightAligned: false
     }
   ];
 
